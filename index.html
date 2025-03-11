@@ -1,32 +1,164 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personas and Storyboarding Case Study</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
-    </div>
-  </body>
+	<body>
+		<header>
+			<h1>Personas and Storyboarding Case Study</h1>
+		</header>
+		<main>
+			<section id="introduction">
+				<h2>Introduction</h2>
+				<p>
+					Imagine you're rushing to grab a few last-minute items at CVS, eager to check out quickly using
+					self-checkout—only to be met with error messages, confusing instructions, and a line forming behind you. This
+					case study examines real user experiences with CVS's self-checkout system, identifying key usability pain
+					points and exploring how interface design impacts everyday shoppers.
+				</p>
+			</section>
 
+			<section id="part1">
+				<h2>Part 1: Sketch & Interface Description</h2>
+				<h3>Sketch</h3>
+				<figure>
+					<img src="assets/CVS Self Checkout.png" alt="Sketch of CVS self-checkout machine" />
+					<figcaption>Sketch of the CVS self-checkout machine, with annotations of interactive components.</figcaption>
+				</figure>
+
+				<h3>Description of the Interface</h3>
+				<p>
+					The CVS self-checkout machine is designed to provide customers with a quick and independent way to purchase
+					things without needing a cashier. Key components include a touchscreen interface for selecting options, a
+					barcode scanner for scanning products, a card payment console, a cash input/output section, and a bagging area
+					with a weight sensor. The interface aims to streamline the checkout process by reducing wait times and
+					offering an alternative for users who prefer self-service.
+				</p>
+			</section>
+
+			<section id="part2">
+				<h2>Part 2: Observations & Interviews</h2>
+
+				<h3>Observations</h3>
+				<p>Below are some key observations from watching customers interact with the CVS self-checkout machine:</p>
+				<ul>
+					<li>
+						The "bagging area" was often unclear to users, as bags were located opposite to where they were supposed to
+						place their items. This resulted in slower checkout times, as the machine doesn't allow the next item to be
+						scanned until it registers the previous item.
+					</li>
+					<li>Many users struggled with scanning irregularly shaped items, requiring multiple attempts.</li>
+					<li>
+						Payment processing caused delays, and users were often unsure when to begin using the seperate payment
+						device.
+					</li>
+					<li>
+						Users also had trouble with inserting coupons into the designated slot, where they would often get lodged.
+					</li>
+					<li>At least one user required employee assistance due to an error message that they could not resolve.</li>
+					<li>Experienced users completed the checkout process significantly faster than first-time users.</li>
+				</ul>
+
+				<h3>Interview Questions</h3>
+				<p>
+					The following questions were used to gather user insights regarding their experience with the self-checkout
+					machine:
+				</p>
+				<ol>
+					<li>Before today, how often have you used a self-checkout machine at CVS or elsewhere?</li>
+					<li>What was the first thing you noticed when you approached the self-checkout machine?</li>
+					<li>Can you describe your overall experience using the CVS self-checkout today?</li>
+					<li>What, if anything, surprised you about the process?</li>
+					<li>Were there any points in the process where you hesitated or felt unsure about what to do next?</li>
+					<li>What aspects of the self-checkout process felt easiest to you?</li>
+					<li>If you could change one thing about the self-checkout experience, what would it be?</li>
+				</ol>
+
+				<h3>Summary of Responses</h3>
+				<p>Below are key insights from user interviews:</p>
+				<ul>
+					<li>Most users expected a smooth and fast experience but were slowed down by minor technical issues.</li>
+					<li>Some users found the scanning process inconsistent and were frustrated by bagging area delays.</li>
+					<li>One user mentioned frustration over the coupon insertion slot.</li>
+					<li>Another user found the card payment process unintuitive, especially with tap-to-pay options.</li>
+					<li>
+						Most users said they would use self-checkout again, but some said they would opt for a cashier if they had
+						multiple coupons or items prone to scanning issues.
+					</li>
+				</ul>
+			</section>
+
+			<section id="part3">
+				<h2>Part 3: Personas</h2>
+
+				<h3>Persona 1: Rushed Rachel</h3>
+				<figure>
+					<img src="assets/Rushed Rachel Empathy Map.png" alt="Empathy Map for Routine Shopper" />
+				</figure>
+				<p>
+					<strong>Description:</strong> Rachel is a busy mother of two with a full-time job who uses self-checkout to
+					save time but often feels frustrated by delays in the process.
+				</p>
+				<p><strong>Interface Challenges:</strong></p>
+				<ul>
+					<li>Bagging area sensitivity: The system flags errors when she moves items too quickly.</li>
+					<li>Unclear coupon scanning process: She isn't sure when or where to scan coupons.</li>
+					<li>Error handling delays: Attendant assistance is required too frequently, slowing her down.</li>
+				</ul>
+				<p>
+					<strong>Why Rachel Represents Users:</strong> She's a common type of user at self-checkouts — busy, impatient,
+					and task-focused. Many customers, particularly working parents or commuters, rely on self-checkout to speed up
+					shopping but become frustrated when the system introduces unexpected delays.
+				</p>
+
+				<h3>Persona 2: Cautious Carl</h3>
+				<figure>
+					<img src="assets/Cautious Carl Empathy Map.png" alt="Empathy Map for First-Time User" />
+					<figcaption>Empathy map for a first-time self-checkout user.</figcaption>
+				</figure>
+				<p>
+					<strong>Description:</strong> Carl is a 55-year-old retiree who is new to self-checkout and prefers
+					traditional cashier interactions. He is careful and methodical but finds the interface confusing and
+					intimidating.
+				</p>
+				<p><strong>Interface Challenges:</strong></p>
+				<ul>
+					<li>Overwhelming number of options on the screen makes it hard to focus on key tasks.</li>
+					<li>Unclear guidance on scanning and payment steps leads to hesitation.</li>
+					<li>Too many system alerts (e.g., “Please remove item”) cause confusion and uncertainty.</li>
+				</ul>
+				<p>
+					<strong>Why Carl Represents Users:</strong> He represents those who are hesitant or unfamiliar with
+					self-checkout technology. Many older customers or those who don't use technology often face similar
+					challenges. They need clearer step-by-step guidance and reassurance that they're doing things correctly.
+				</p>
+			</section>
+
+			<section id="part4">
+				<h2>Part 4: Storyboard</h2>
+				<p>
+					This storyboard follows Rushed Rachel, who wants to quickly purchase groceries before heading home to make
+					dinner, but scanning issues, coupon confusion, and bagging system errors create frustration.
+				</p>
+
+				<figure>
+					<img src="assets/Rushed_Rachel_v1.png" alt="Rushed Rachel Storyboard" />
+					<figcaption>Rushed Rachel storyboard, created using Boords.com.</figcaption>
+				</figure>
+			</section>
+
+			<section id="lessons-learned">
+				<h2>Lessons Learned</h2>
+				<p>
+					Through this project, I gained valuable insights into real-world user challenges at self-checkout kiosks. My
+					research highlighted common frustrations like unclear coupon scanning and bagging area errors. Creating
+					personas and a storyboard helped visualize user struggles, emphasizing the importance of intuitive design in
+					self-service interfaces.
+				</p>
+			</section>
+		</main>
+	</body>
 </html>
